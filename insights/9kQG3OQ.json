@@ -1,0 +1,409 @@
+{
+  "type": "eda",
+  "params": {
+    "card": {
+      "type": "univariate_header",
+      "showHistogram": true,
+      "showQuantile": true,
+      "showFrequencyTable": true,
+      "showSummary": true,
+      "showBoxPlot": true,
+      "xColumns": [
+        {
+          "name": "Plaats",
+          "type": "CATEGORICAL"
+        },
+        {
+          "name": "Vraagprijs",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Huurprijs",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "KoopConditie",
+          "type": "CATEGORICAL"
+        },
+        {
+          "name": "Inhoud",
+          "type": "CONTINUOUS"
+        }
+      ],
+      "cards": [
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Plaats",
+            "type": "CATEGORICAL"
+          },
+          "cards": [
+            {
+              "type": "categorical_histogram",
+              "maxValues": 10,
+              "groupOthers": false,
+              "column": {
+                "name": "Plaats",
+                "type": "CATEGORICAL"
+              },
+              "id": "fmFyVwQ"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Plaats",
+                "type": "CATEGORICAL"
+              },
+              "id": "9GfPMX3"
+            },
+            {
+              "type": "univariate_frequency_table",
+              "maxValues": 10,
+              "column": {
+                "name": "Plaats",
+                "type": "CATEGORICAL"
+              },
+              "id": "XZIfJs3"
+            }
+          ],
+          "id": "U0jo7E7"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Vraagprijs",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "numerical_histogram",
+              "showBoxPlot": true,
+              "showHistogram": true,
+              "binningMode": "AUTO",
+              "nbBins": 100,
+              "customBinningBoundaries": [],
+              "column": {
+                "name": "Vraagprijs",
+                "type": "CONTINUOUS"
+              },
+              "id": "Ls8eKku"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Vraagprijs",
+                "type": "CONTINUOUS"
+              },
+              "id": "RKPSmOj"
+            },
+            {
+              "type": "quantile_table",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "column": {
+                "name": "Vraagprijs",
+                "type": "CONTINUOUS"
+              },
+              "id": "V08oGbG"
+            }
+          ],
+          "id": "Y03nkfT"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Huurprijs",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "numerical_histogram",
+              "showBoxPlot": true,
+              "showHistogram": true,
+              "binningMode": "AUTO",
+              "nbBins": 100,
+              "customBinningBoundaries": [],
+              "column": {
+                "name": "Huurprijs",
+                "type": "CONTINUOUS"
+              },
+              "id": "1xfe1ZW"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Huurprijs",
+                "type": "CONTINUOUS"
+              },
+              "id": "S5RnWhb"
+            },
+            {
+              "type": "quantile_table",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "column": {
+                "name": "Huurprijs",
+                "type": "CONTINUOUS"
+              },
+              "id": "bZlaXM1"
+            }
+          ],
+          "id": "d2lfm9M"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "KoopConditie",
+            "type": "CATEGORICAL"
+          },
+          "cards": [
+            {
+              "type": "categorical_histogram",
+              "maxValues": 10,
+              "groupOthers": false,
+              "column": {
+                "name": "KoopConditie",
+                "type": "CATEGORICAL"
+              },
+              "id": "GTa9Sl3"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "KoopConditie",
+                "type": "CATEGORICAL"
+              },
+              "id": "urK3bnb"
+            },
+            {
+              "type": "univariate_frequency_table",
+              "maxValues": 10,
+              "column": {
+                "name": "KoopConditie",
+                "type": "CATEGORICAL"
+              },
+              "id": "WYEtXc6"
+            }
+          ],
+          "id": "EW1VZZD"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Inhoud",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "numerical_histogram",
+              "showBoxPlot": true,
+              "showHistogram": true,
+              "binningMode": "AUTO",
+              "nbBins": 100,
+              "customBinningBoundaries": [],
+              "column": {
+                "name": "Inhoud",
+                "type": "CONTINUOUS"
+              },
+              "id": "XRn6PEt"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Inhoud",
+                "type": "CONTINUOUS"
+              },
+              "id": "U3UEPGK"
+            },
+            {
+              "type": "quantile_table",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "column": {
+                "name": "Inhoud",
+                "type": "CONTINUOUS"
+              },
+              "id": "xYeRBo9"
+            }
+          ],
+          "id": "sYQiVnO"
+        }
+      ],
+      "id": "x9YZjz2"
+    },
+    "dataSpec": {
+      "inputDatasetSmartName": "woning_trx2018",
+      "datasetSelection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": true,
+      "refreshTrigger": 0,
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      }
+    }
+  },
+  "owner": "admin",
+  "listed": true,
+  "name": "Univariate analysis on 5 variables ",
+  "dashboardCreationId": "Slf5IaX",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1583785735997
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1583785735997
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
