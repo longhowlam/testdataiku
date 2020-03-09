@@ -1,0 +1,513 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {},
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [
+    {
+      "copySelectionFromScript": true,
+      "engineType": "LINO",
+      "def": {
+        "type": "scatter",
+        "variant": "normal",
+        "name": "Woonoppervlak vs Transactieprijs",
+        "userEditedName": false,
+        "genericDimension0": [],
+        "genericDimension1": [],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [
+          {
+            "column": "Woonoppervlak",
+            "type": "NUMERICAL",
+            "treatAsAlphanum": false,
+            "sortBy": "NATURAL",
+            "sortAscending": false,
+            "isA": "ua"
+          }
+        ],
+        "uaYDimension": [
+          {
+            "column": "Transactieprijs",
+            "type": "NUMERICAL",
+            "treatAsAlphanum": false,
+            "sortBy": "NATURAL",
+            "sortAscending": false,
+            "isA": "ua"
+          }
+        ],
+        "uaSize": [
+          {
+            "column": "Aantal kamers",
+            "type": "NUMERICAL",
+            "treatAsAlphanum": false,
+            "isA": "ua",
+            "adminLevel": 0
+          }
+        ],
+        "uaShape": [],
+        "uaColor": [
+          {
+            "column": "Soort_appartement",
+            "type": "ALPHANUM",
+            "treatAsAlphanum": false,
+            "isA": "ua",
+            "adminLevel": 0
+          }
+        ],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [
+          {
+            "filterType": "NUMERICAL_FACET",
+            "column": "Woonoppervlak",
+            "columnType": "NUMERICAL",
+            "minValue": 25.0,
+            "maxValue": 451.4142163,
+            "isA": "filter",
+            "excludedValues": {},
+            "explicitExclude": false
+          },
+          {
+            "filterType": "NUMERICAL_FACET",
+            "column": "Transactieprijs",
+            "columnType": "NUMERICAL",
+            "minValue": 30000.0,
+            "maxValue": 3000000.0,
+            "isA": "filter",
+            "excludedValues": {},
+            "explicitExclude": false
+          }
+        ],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.6,
+        "showXAxisLabel": true,
+        "showYAxisLabel": true,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "chartHeight": 200,
+        "singleXAxis": true,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorOptions": {
+          "singleColor": "#2678B1",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0
+        },
+        "bubblesOptions": {
+          "defaultRadius": 2.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "computeMode": "NORMAL",
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "thumbnailData": "data:image/png;base64,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",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
+    },
+    {
+      "copySelectionFromScript": false,
+      "engineType": "LINO",
+      "refreshableSelection": {
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "RANDOM_FIXED_RATIO",
+          "maxRecords": 10000,
+          "targetRatio": 0.15,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 2
+      },
+      "def": {
+        "type": "scatter_map",
+        "variant": "normal",
+        "name": "New chart",
+        "userEditedName": false,
+        "genericDimension0": [],
+        "genericDimension1": [],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [
+          {
+            "column": "Woonoppervlak",
+            "type": "NUMERICAL",
+            "treatAsAlphanum": false,
+            "isA": "ua",
+            "adminLevel": 0
+          }
+        ],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [
+          {
+            "column": "huislokatie",
+            "type": "GEOPOINT",
+            "treatAsAlphanum": false,
+            "isA": "ua",
+            "adminLevel": 0
+          }
+        ],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [
+          {
+            "filterType": "NUMERICAL_FACET",
+            "column": "Woonoppervlak",
+            "columnType": "NUMERICAL",
+            "minValue": 25.0,
+            "maxValue": 400.0,
+            "isA": "filter",
+            "excludedValues": {},
+            "explicitExclude": false
+          }
+        ],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.6,
+        "showXAxisLabel": true,
+        "showYAxisLabel": true,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "chartHeight": 200,
+        "singleXAxis": true,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorOptions": {
+          "singleColor": "#2678B1",
+          "transparency": 0.75,
+          "colorPalette": "gyr1",
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0
+        },
+        "bubblesOptions": {
+          "defaultRadius": 2.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "computeMode": "NORMAL",
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
+    },
+    {
+      "copySelectionFromScript": false,
+      "engineType": "LINO",
+      "refreshableSelection": {
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "RANDOM_FIXED_RATIO",
+          "maxRecords": 10000,
+          "targetRatio": 0.15,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 2
+      },
+      "def": {
+        "type": "grouped_columns",
+        "variant": "normal",
+        "name": "Avg. of Woonoppervlak by woning_soort",
+        "userEditedName": false,
+        "genericDimension0": [
+          {
+            "column": "woning_soort",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS",
+              "nbBins": ""
+            },
+            "maxValues": 50,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Woonoppervlak, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Woonoppervlak, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of Woonoppervlak, descending"
+            }
+          }
+        ],
+        "genericDimension1": [],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [
+          {
+            "column": "Woonoppervlak",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          }
+        ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.6,
+        "showXAxisLabel": true,
+        "showYAxisLabel": true,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "chartHeight": 200,
+        "singleXAxis": true,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorOptions": {
+          "singleColor": "#2678B1",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "computeMode": "NORMAL",
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABZ0lEQVRoQ+2YP0sDQRDF32xEuDKFhSDEr2K/qeJXsFHshGvsvaDYCH4JS+3TC9bWl8JKEMGgYOLKFofneXdZSHBvdufqhZvfe29m/xAi+6jKO0jvJvlY74WqgwCLw4FluzbSljHUPhZg28NROhwqdGOkowQ2X+Z+ej5MQxrUrQ5HCbz1+nT63N85BswwhJgvdbgK/CvehIc80yecIr8acB0p4SbP9HVXRVg/MAAFdfmWJJPkfXZFwG4B34XT278Cl133Be8N2NcA9Arsw/HOAAM0Q693gE9sQ80vANAi2Ripj7mZZvplXUOwk8BGLc4IZrMOctXeZwdcI8JjPtaHg/T2CKD9ZbMhSOCqKOVURAFcdj0a4AJagIsnHquIvR62Xh4a9oqmo2X71vKzLbVNaZeh1fQf28visDhceQBwOfGwirQLEOc1f3qYM4xL7QLsohLnNeIwZ/dcaheHXVTivEYc5uyeS+3fMgjdOEwVqxEAAAAASUVORK5CYII\u003d",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "type": "Filesystem",
+  "managed": true,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "unix",
+    "charset": "utf8",
+    "separator": "\t",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": "gz"
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 4,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1575062112140
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1575060217676
+  },
+  "tags": [],
+  "params": {
+    "connection": "filesystem_managed",
+    "path": "/WONINGEN.woningen_analyse_set",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "Straatnaam",
+        "type": "string"
+      },
+      {
+        "name": "Huisnummer",
+        "type": "bigint"
+      },
+      {
+        "name": "Toevoeging",
+        "type": "string"
+      },
+      {
+        "name": "Postcode",
+        "type": "string"
+      },
+      {
+        "name": "PC2",
+        "type": "string",
+        "meaning": "Text"
+      },
+      {
+        "name": "Plaats",
+        "type": "string"
+      },
+      {
+        "name": "Vraagprijs",
+        "type": "double"
+      },
+      {
+        "name": "Originele vraagprijs",
+        "type": "double"
+      },
+      {
+        "name": "Vorige vraagprijs",
+        "type": "double"
+      },
+      {
+        "name": "KoopConditie",
+        "type": "string"
+      },
+      {
+        "name": "Huurprijs",
+        "type": "double"
+      },
+      {
+        "name": "HuurConditie",
+        "type": "string"
+      },
+      {
+        "name": "Status",
+        "type": "string"
+      },
+      {
+        "name": "Datum voorbehoud",
+        "type": "string"
+      },
+      {
+        "name": "Invoerdatum",
+        "type": "string"
+      },
+      {
+        "name": "Aanmelder regel 1",
+        "type": "string"
+      },
+      {
+        "name": "Aanmelder regel 2",
+        "type": "string"
+      },
+      {
+        "name": "Bouwjaar",
+        "type": "bigint"
+      },
+      {
+        "name": "Woonoppervlak",
+        "type": "double"
+      },
+      {
+        "name": "Inhoud",
+        "type": "double"
+      },
+      {
+        "name": "Garage",
+        "type": "string"
+      },
+      {
+        "name": "Soort_woning",
+        "type": "string"
+      },
+      {
+        "name": "Type_woning",
+        "type": "string"
+      },
+      {
+        "name": "Soort_appartement",
+        "type": "string"
+      },
+      {
+        "name": "woning_soort",
+        "type": "string"
+      },
+      {
+        "name": "Aantal kamers",
+        "type": "bigint"
+      },
+      {
+        "name": "Perceel",
+        "type": "bigint"
+      },
+      {
+        "name": "Datum_akte",
+        "type": "string"
+      },
+      {
+        "name": "Transactieprijs",
+        "type": "double"
+      },
+      {
+        "name": "TransactieConditie",
+        "type": "string"
+      },
+      {
+        "name": "Looptijd",
+        "type": "bigint"
+      },
+      {
+        "name": "lat",
+        "type": "double"
+      },
+      {
+        "name": "lon",
+        "type": "double"
+      },
+      {
+        "name": "huislokatie",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

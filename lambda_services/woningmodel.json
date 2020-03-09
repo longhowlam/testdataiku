@@ -1,0 +1,36 @@
+{
+  "name": "woningmodel",
+  "endpoints": [
+    {
+      "modelRef": "pJOX01Zw",
+      "useJava": true,
+      "testQueries": [
+        {
+          "name": "woningen_analyse_set #1",
+          "q": {
+            "features": {
+              "PC2": "10",
+              "Woonoppervlak": 137,
+              "Inhoud": 445,
+              "woning_soort": "__Bovenwoning",
+              "Aantal kamers": 3
+            }
+          }
+        }
+      ],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "id": "endpoint",
+      "type": "STD_PREDICTION"
+    }
+  ],
+  "publicAccess": true,
+  "authRealm": {
+    "queryKeys": []
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
