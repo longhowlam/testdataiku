@@ -5,6 +5,39 @@
     "columnsSelection": {
       "mode": "ALL"
     },
+    "columnWidthsByName": {
+      "Straatnaam": 211,
+      "Huisnummer": 100,
+      "Toevoeging": 100,
+      "Postcode": 106,
+      "Plaats": 127,
+      "Vraagprijs": 120,
+      "Originele vraagprijs": 165,
+      "Vorige vraagprijs": 143,
+      "KoopConditie": 134,
+      "Huurprijs": 100,
+      "HuurConditie": 105,
+      "Status": 190,
+      "Datum voorbehoud": 135,
+      "Invoerdatum": 127,
+      "Aanmelder regel 1": 300,
+      "Aanmelder regel 2": 143,
+      "Bouwjaar": 100,
+      "Woonoppervlak": 113,
+      "Inhoud": 100,
+      "Garage": 218,
+      "Soort_woning": 134,
+      "Type_woning": 162,
+      "Soort_appartement": 143,
+      "Aantal kamers": 113,
+      "Perceel": 100,
+      "Datum_akte": 120,
+      "Transactieprijs": 128,
+      "TransactieConditie": 176,
+      "Looptijd": 100,
+      "lat": 100,
+      "lon": 100
+    },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
@@ -14,7 +47,7 @@
     "analysisColumnData": {},
     "explorationSampling": {
       "selection": {
-        "maxStoredBytes": 104857600,
+        "maxStoredBytes": 314572800,
         "filter": {
           "distinct": false,
           "enabled": false
@@ -32,7 +65,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1
+      "_refreshTrigger": 2
     },
     "vizSampling": {
       "autoRefreshSample": false,
