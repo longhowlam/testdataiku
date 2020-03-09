@@ -53,8 +53,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 4,
+              "left": 0,
               "width": 10,
               "height": 5
             },
@@ -69,6 +69,7 @@
           }
         ]
       },
+      "title": "p",
       "showTitle": false
     }
   ],
@@ -77,11 +78,11 @@
   "name": "woningen\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583785525757
+    "lastModifiedOn": 1583785589335
   },
   "creationTag": {
     "versionNumber": 0,
