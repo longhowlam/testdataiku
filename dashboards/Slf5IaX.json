@@ -95,11 +95,11 @@
   "name": "woningen\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583785736001
+    "lastModifiedOn": 1583785736686
   },
   "creationTag": {
     "versionNumber": 0,
