@@ -45,6 +45,10 @@
           {
             "name": "Vraagprijs",
             "type": "CONTINUOUS"
+          },
+          {
+            "name": "Huurprijs",
+            "type": "CONTINUOUS"
           }
         ],
         "cards": [
@@ -175,6 +179,72 @@
               }
             ],
             "id": "Y03nkfT"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Huurprijs",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "binningMode": "AUTO",
+                "nbBins": 100,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "Huurprijs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "1xfe1ZW"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Huurprijs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "S5RnWhb"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Huurprijs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "bZlaXM1"
+              }
+            ],
+            "id": "d2lfm9M"
           }
         ],
         "id": "x9YZjz2"
@@ -184,11 +254,11 @@
   },
   "name": "Worksheet 2",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583785389642
+    "lastModifiedOn": 1583785489363
   },
   "creationTag": {
     "versionNumber": 0,
