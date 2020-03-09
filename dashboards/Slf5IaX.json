@@ -78,11 +78,11 @@
   "name": "De Nederlandse woningmarkt",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583785843210
+    "lastModifiedOn": 1583785910201
   },
   "creationTag": {
     "versionNumber": 0,
