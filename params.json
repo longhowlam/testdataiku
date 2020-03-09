@@ -190,11 +190,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583787537096
+    "lastModifiedOn": 1583787640377
   },
   "creationTag": {
     "versionNumber": 0,
@@ -203,6 +203,7 @@
     },
     "lastModifiedOn": 1573121203392
   },
+  "description": "# Woningen project",
   "shortDesc": "The project *woningen* was created by Administrator on Nov 07th 2019",
   "tags": [
     "imported"
