@@ -29,16 +29,73 @@
     "type": "worksheet_root",
     "confidenceLevel": 0.95,
     "showConfidenceInterval": false,
-    "cards": [],
+    "cards": [
+      {
+        "type": "correlation_matrix",
+        "heatmapParams": {
+          "showValues": true,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0
+        },
+        "metric": "SPEARMAN",
+        "columns": [
+          {
+            "name": "Vraagprijs",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Originele vraagprijs",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Vorige vraagprijs",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Huurprijs",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Bouwjaar",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Woonoppervlak",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Inhoud",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Aantal kamers",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "splitBy": {
+          "groupingColumn": {
+            "name": "Soort_woning",
+            "type": "CATEGORICAL"
+          },
+          "binningMode": "AUTO",
+          "maxValues": 3,
+          "groupWithOthers": true,
+          "customBinningBoundaries": [],
+          "groupWithAll": true
+        },
+        "id": "IGetsvu"
+      }
+    ],
     "id": "a3kcGEw"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583784953270
+    "lastModifiedOn": 1583785094662
   },
   "creationTag": {
     "versionNumber": 0,
