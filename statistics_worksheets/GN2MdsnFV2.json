@@ -49,6 +49,14 @@
           {
             "name": "Huurprijs",
             "type": "CONTINUOUS"
+          },
+          {
+            "name": "KoopConditie",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Inhoud",
+            "type": "CONTINUOUS"
           }
         ],
         "cards": [
@@ -245,6 +253,134 @@
               }
             ],
             "id": "d2lfm9M"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "KoopConditie",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "KoopConditie",
+                  "type": "CATEGORICAL"
+                },
+                "id": "GTa9Sl3"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "KoopConditie",
+                  "type": "CATEGORICAL"
+                },
+                "id": "urK3bnb"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "KoopConditie",
+                  "type": "CATEGORICAL"
+                },
+                "id": "WYEtXc6"
+              }
+            ],
+            "id": "EW1VZZD"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Inhoud",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "binningMode": "AUTO",
+                "nbBins": 100,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "Inhoud",
+                  "type": "CONTINUOUS"
+                },
+                "id": "XRn6PEt"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Inhoud",
+                  "type": "CONTINUOUS"
+                },
+                "id": "U3UEPGK"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Inhoud",
+                  "type": "CONTINUOUS"
+                },
+                "id": "xYeRBo9"
+              }
+            ],
+            "id": "sYQiVnO"
           }
         ],
         "id": "x9YZjz2"
@@ -254,11 +390,11 @@
   },
   "name": "Worksheet 2",
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583785489363
+    "lastModifiedOn": 1583785721491
   },
   "creationTag": {
     "versionNumber": 0,
