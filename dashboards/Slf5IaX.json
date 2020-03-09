@@ -75,14 +75,14 @@
   ],
   "owner": "admin",
   "listed": true,
-  "name": "woningen\u0027s default dashboard",
+  "name": "De Nederlandse woningmarkt",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583785817538
+    "lastModifiedOn": 1583785843210
   },
   "creationTag": {
     "versionNumber": 0,
