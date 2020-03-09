@@ -63429,7 +63429,7 @@
         "chartHeight": 200,
         "singleXAxis": true,
         "multiTooltips": false,
-        "animationFrameDuration": 3000,
+        "animationFrameDuration": 500,
         "animationRepeat": true,
         "colorOptions": {
           "singleColor": "#2678B1",
@@ -63456,7 +63456,7 @@
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
-          "donutHoleSize": 28.0
+          "donutHoleSize": 55.0
         },
         "scatterOptions": {
           "equalScales": false,
@@ -63470,7 +63470,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAn0lEQVRoQ+2VQQqAMAwEm/8/OuKhUFDoKbuQjFfB7c6kMdawJ4b1XRTubhzDGG5GgJFuJvRTB8MYbkaAkW4mlKVlGenMzI0+IqRnkIa9Jc+yjtLSwn9l1aUpXLmlMXzQVS0vRrpypMdt6Q1z1H+4eoJu35fe4dthFO8prKDszMCwk74iG8MKys4MDDvpK7IxrKDszMCwk74iG8MKys6MBxlhJClQOF6AAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACB0lEQVRoQ+3YvUsCYRwH8OdBwzQLoiBoUIj6CxqCLsEmB/+D1rRFlyZb3aIpopbeCW5uyD2JImpqqF3apSFSw9B4hkcOuefl9Pc77/Dc5B7vuc99v8+9SMmYfeiYeUkAxkw8Warc8/3nF+rN9Mx3lH/fyBU3Mefm+3YlYStUBHYLjg62wzJcf8LWdDHTRgMnSnd5SuiWqKYyMPsN7dBdY6fwBl1zNLAoWVWlsZNGAauwqkpjosHBOlgnYDYWck2PBPxezhjxSHii3Wr+vpqXz6p16lmwKt3afjYtwj1dnFRlcCg0aMIysAzLoTK058DDYlVoSkjDyBWzqvqrtoMlLAIby/PTZm5tVXUgfPvLzenDX7vdsRsPkTI6WKfK/ThRtQOwbm0s41ATnoqEQx/lTMrpcfk24UHqLLt4eb7SAdhBt+1q7fmEmW+QlH27hgOwZqV9m3As1GmeLX1Gje2C8KVB96ED6jUR7D6c2Ktc0y5JcoC5UutZIMDdLrlN5YtHmiURDgMDsxn487QVy2fWQfvqbYnBDg6vzPX4z6Lo9MrQvnwfZtDH8+Pen+2y+sVm5yYbX/WWTkUh7r98HtBKOwHrQPkYT4Oh0ZBYdmzgCfNUdKstSxoaiwoeNmkMLDp4UDQW1hWwUzQm1jWwdZ3arW1spHV+tIuWk9uOm2MDsJtnexRzjV3C/2eV+imBO/Y4AAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
