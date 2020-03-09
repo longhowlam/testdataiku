@@ -10,6 +10,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "woning_trx2018",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -180,11 +189,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
-      "login": "api:TOG0U1L8JT8RIB6Y"
+      "login": "admin"
     },
-    "lastModifiedOn": 1583784817961
+    "lastModifiedOn": 1583785524863
   },
   "creationTag": {
     "versionNumber": 0,
