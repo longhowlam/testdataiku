@@ -78,11 +78,11 @@
   "name": "woningen\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583785805647
+    "lastModifiedOn": 1583785817538
   },
   "creationTag": {
     "versionNumber": 0,
